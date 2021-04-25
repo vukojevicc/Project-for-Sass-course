@@ -22,6 +22,7 @@
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
+
     &--white{
         background-color: $color-white;
         color: $color-gray-dark ;
@@ -29,6 +30,15 @@
             background-color: $color-white;
         }
     }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white ;
+        &::after{
+            background-color: $color-primary;
+        }
+    }
+
     &::after{
         content: '';
         display: inline-block;
