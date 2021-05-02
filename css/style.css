@@ -407,6 +407,23 @@ body {
 .form__radio-input {
   display: none; }
 
+.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+  top: 0;
+  left: 0;
+  z-index: 9998; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 80%;
+    border: 1px solid #fff; }
+
 .story {
   width: 75%;
   margin: 0 auto;
