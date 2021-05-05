@@ -4,8 +4,7 @@
 900px - 1200px: Tablet landscape;
 1200px - 1800px: Is where our normal styles apply (desktop first aproach);
 1800px + : Big screens;
-*/
-/*
+
 $breakpoint argument choices:
 - phone;
 - tab-port;
@@ -21,12 +20,15 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 600px) {
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 600px) {
+  @media (min-width: 112.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
