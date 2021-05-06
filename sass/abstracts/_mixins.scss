@@ -26,6 +26,10 @@ $breakpoint argument choices:
 - tab-port;
 - tab-land;
 - big-desktop;
+
+1em = 16px in media queries. It completily ignores our root font size in html selector. It's calculated based on browsers font size.
+
+Order of media queries: Base + typography > general layout (header, footer, navigation and grid) > page layout (like _home.scss) > components
 */
 @mixin respond($breakpoint) {
 
