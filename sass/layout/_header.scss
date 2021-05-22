@@ -8,6 +8,7 @@
     position: relative;
 
     @media (min-resolution: 192dpi) and (min-width: 37.5em),
+           (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em),
     (min-width: 125em){
         background-image: linear-gradient(to right, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),url('../img/hero.jpg');
     }
